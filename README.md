@@ -34,6 +34,44 @@ my-web-site/
 └── README.md
 ```
 
+### Диаграмма структуры
+
+```mermaid
+flowchart TD
+    ROOT["📦 my-web-site/"]
+
+    ROOT --> PAGES["Страницы"]
+    ROOT --> CSS["📁 css/"]
+    ROOT --> JS["📁 js/"]
+    ROOT --> IMG["📁 img/"]
+    ROOT --> EXTRA["📁 pages/"]
+    ROOT --> README["📄 README.md"]
+
+    PAGES --> INDEX["index.html<br/>Главная"]
+    PAGES --> ABOUT["about.html<br/>О салоне"]
+    PAGES --> BLOG["blog.html<br/>Советы"]
+    PAGES --> CONTACT["contact.html<br/>Запись"]
+
+    CSS --> STYLE["style.css<br/>темы, сетка, адаптив"]
+    JS --> SCRIPT["script.js<br/>тема, поиск, лайки, форма"]
+    IMG --> LOGO["logo.svg"]
+    IMG --> FAV["favicon.svg"]
+    IMG --> HERO["hero.svg"]
+    IMG --> SHOTS["screenshots/"]
+
+    INDEX -. подключает .-> STYLE
+    ABOUT -. подключает .-> STYLE
+    BLOG -. подключает .-> STYLE
+    CONTACT -. подключает .-> STYLE
+
+    INDEX -. подключает .-> SCRIPT
+    ABOUT -. подключает .-> SCRIPT
+    BLOG -. подключает .-> SCRIPT
+    CONTACT -. подключает .-> SCRIPT
+
+    SCRIPT -. сохраняет .-> LS[("localStorage<br/>тема, лайки, заявки")]
+```
+
 ## 🌐 GitHub Pages
 
 Сайт доступен по адресу: https://archicff.github.io/grumings_salon/

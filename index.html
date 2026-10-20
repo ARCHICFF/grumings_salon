@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Груминг-салон «Пушистый друг»: стрижка, купание, тримминг и уход за собаками всех пород.">
+  <title>Главная — Пушистый друг</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Применяем сохранённую тему до отрисовки, чтобы не было мигания */
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t && window.matchMedia('(prefers-color-scheme: dark)').matches) t = 'dark';
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- ===== Header (одинаковый на всех страницах) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="36" height="36">
+        <span>Пушистый друг</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Главная</a></li>
+          <li><a href="about.html">О салоне</a></li>
+          <li><a href="blog.html">Советы</a></li>
+          <li><a href="contact.html">Запись</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Переключить тему" title="Тёмная / светлая тема">🌙</button>
+        <button class="icon-btn burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="eyebrow">🐾 Груминг-салон для собак</span>
+          <h1>Бережный груминг: <span class="typing" id="typing" data-words='["стрижка","купание","тримминг","уход за когтями"]'>стрижка</span></h1>
+          <p class="lead">
+            Красиво, аккуратно и без стресса для питомца. Работаем со всеми породами,
+            используем щадящую косметику и подбираем подход к каждой собаке.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="contact.html">Записаться</a>
+            <a class="btn btn-outline" href="#services">Услуги и цены</a>
+          </div>
+          <p class="muted" style="margin-top:18px">Вы заходили на сайт: <strong id="visit-counter">1</strong> раз(а)</p>
+        </div>
+        <img class="hero-art" src="img/hero.svg" alt="Иллюстрация: собака в пене после купания" width="320" height="280">
+      </div>
+    </section>
+
+    <!-- ===== Статистика ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Салон в цифрах</h2>
+        <div class="stats">
+          <div class="card stat reveal"><span class="num" data-count="1200">0</span><span class="label">ухоженных питомцев</span></div>
+          <div class="card stat reveal"><span class="num" data-count="8">0</span><span class="label">лет опыта</span></div>
+          <div class="card stat reveal"><span class="num" data-count="40">0</span><span class="label">пород в работе</span></div>
+          <div class="card stat reveal"><span class="num" data-count="98">0</span><span class="label">% вернулись снова</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Услуги ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section-title">Услуги и цены</h2>
+        <div class="grid cols-4">
+          <article class="card service reveal">
+            <span class="emoji">🛁</span>
+            <h3>Купание</h3>
+            <p class="muted">Мытьё, маска, сушка и вычёсывание.</p>
+            <span class="price">от 1500 ₽</span>
+          </article>
+          <article class="card service reveal">
+            <span class="emoji">✂️</span>
+            <h3>Стрижка</h3>
+            <p class="muted">Модельная или гигиеническая, по породе.</p>
+            <span class="price">от 2500 ₽</span>
+          </article>
+          <article class="card service reveal">
+            <span class="emoji">🪮</span>
+            <h3>Тримминг</h3>
+            <p class="muted">Удаление отмершей шерсти руками или ножом.</p>
+            <span class="price">от 3000 ₽</span>
+          </article>
+          <article class="card service reveal">
+            <span class="emoji">💅</span>
+            <h3>Когти и уши</h3>
+            <p class="muted">Подрезка когтей, чистка ушей, гигиена лап.</p>
+            <span class="price">от 500 ₽</span>
+          </article>
+        </div>
+        <p class="form-hint">Цены ориентировочные: итоговая стоимость зависит от размера, породы и состояния шерсти.</p>
+      </div>
+    </section>
+
+    <!-- ===== Быстрые ссылки ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Быстрые ссылки</h2>
+        <div class="grid cols-3">
+          <a class="card quick-link reveal" href="about.html">
+            <span class="emoji">🏠</span>
+            <h3>О салоне</h3>
+            <p class="muted">Наши мастера, принципы работы и история.</p>
+          </a>
+          <a class="card quick-link reveal" href="blog.html">
+            <span class="emoji">💡</span>
+            <h3>Советы по уходу</h3>
+            <p class="muted">Как ухаживать за шерстью, когтями и ушами дома.</p>
+          </a>
+          <a class="card quick-link reveal" href="contact.html">
+            <span class="emoji">📅</span>
+            <h3>Запись</h3>
+            <p class="muted">Оставьте заявку, и мы подберём время.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Новости и акции (с поиском) ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Новости и акции</h2>
+
+        <label class="search-box" for="news-search">
+          <span aria-hidden="true">🔍</span>
+          <input type="text" id="news-search" placeholder="Поиск по новостям…" data-search="#news-list" autocomplete="off">
+        </label>
+
+        <div class="grid cols-3" id="news-list">
+          <article class="card news-item reveal" data-searchable>
+            <time datetime="2026-10-18">18 октября 2026</time>
+            <h3>Скидка 15% на первое посещение</h3>
+            <p>Новым клиентам дарим скидку на любую комплексную услугу. Назовите промокод «ЛАПКА» при записи.</p>
+          </article>
+          <article class="card news-item reveal" data-searchable>
+            <time datetime="2026-10-12">12 октября 2026</time>
+            <h3>Осенняя линька: спецуход</h3>
+            <p>Процедура глубокого вычёсывания подшёрстка помогает собаке пережить линьку, а дому остаться чистым.</p>
+          </article>
+          <article class="card news-item reveal" data-searchable>
+            <time datetime="2026-10-05">5 октября 2026</time>
+            <h3>Новая зона для маленьких пород</h3>
+            <p>Открыли тихий кабинет для чихуахуа, той-терьеров и других малышей, чтобы им было спокойнее.</p>
+          </article>
+        </div>
+        <p class="empty-state" id="news-empty">Ничего не найдено. Попробуйте другой запрос.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer (одинаковый на всех страницах) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Груминг-салон «Пушистый друг». Учебный проект.</p>
+      <ul class="footer-nav">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О салоне</a></li>
+        <li><a href="blog.html">Советы</a></li>
+        <li><a href="contact.html">Запись</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="icon-btn to-top" id="to-top" type="button" aria-label="Наверх">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

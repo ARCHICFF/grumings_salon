@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Запись на груминг и контакты салона «Пушистый друг».">
+  <title>Запись — Пушистый друг</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Применяем сохранённую тему до отрисовки, чтобы не было мигания */
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t && window.matchMedia('(prefers-color-scheme: dark)').matches) t = 'dark';
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- ===== Header (одинаковый на всех страницах) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="36" height="36">
+        <span>Пушистый друг</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О салоне</a></li>
+          <li><a href="blog.html">Советы</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Запись</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Переключить тему" title="Тёмная / светлая тема">🌙</button>
+        <button class="icon-btn burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1>Запись на груминг</h1>
+        <p class="muted">Оставьте заявку, и администратор подтвердит время. Заявка сохранится в вашем браузере (localStorage), сервера у сайта нет.</p>
+
+        <div class="contact-layout">
+          <div class="card reveal">
+            <h2>Как нас найти</h2>
+            <ul class="contact-list">
+              <li>📍 Адрес: ул. Примерная, 12 (укажите свой)</li>
+              <li>📞 <a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+              <li>📧 <a href="mailto:example@example.com">example@example.com</a></li>
+              <li>💬 Telegram: <a href="https://t.me/your_username" target="_blank" rel="noopener">@your_username</a></li>
+              <li>🕘 Ежедневно с 10:00 до 20:00</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h2>Оставить заявку</h2>
+
+            <div class="alert" id="form-alert" role="status">Спасибо! Заявка сохранена ниже.</div>
+
+            <form id="contact-form" novalidate>
+              <div class="field">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+              </div>
+              <div class="field">
+                <label for="breed">Порода собаки</label>
+                <input type="text" id="breed" name="breed" placeholder="Например, йоркширский терьер">
+              </div>
+              <div class="field">
+                <label for="service">Услуга</label>
+                <select id="service" name="service">
+                  <option value="Купание">Купание</option>
+                  <option value="Стрижка">Стрижка</option>
+                  <option value="Тримминг">Тримминг</option>
+                  <option value="Когти и уши">Когти и уши</option>
+                  <option value="Комплексный уход">Комплексный уход</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">Пожелания</label>
+                <textarea id="message" name="message" placeholder="Удобные дата и время, особенности питомца…" required></textarea>
+                <p class="form-hint" id="draft-hint">Черновик сохраняется автоматически.</p>
+              </div>
+              <button class="btn" type="submit">Записаться</button>
+            </form>
+
+            <h3 style="margin-top:24px">Ваши заявки</h3>
+            <div class="messages" id="messages"></div>
+            <button class="btn btn-outline" type="button" id="clear-messages" style="margin-top:12px">Очистить список</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer (одинаковый на всех страницах) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Груминг-салон «Пушистый друг». Учебный проект.</p>
+      <ul class="footer-nav">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О салоне</a></li>
+        <li><a href="blog.html">Советы</a></li>
+        <li><a href="contact.html">Запись</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="icon-btn to-top" id="to-top" type="button" aria-label="Наверх">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

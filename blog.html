@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Советы грумеров по уходу за шерстью, когтями и ушами собаки.">
+  <title>Советы по уходу — Пушистый друг</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Применяем сохранённую тему до отрисовки, чтобы не было мигания */
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t && window.matchMedia('(prefers-color-scheme: dark)').matches) t = 'dark';
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- ===== Header (одинаковый на всех страницах) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="36" height="36">
+        <span>Пушистый друг</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О салоне</a></li>
+          <li><a href="blog.html" class="active" aria-current="page">Советы</a></li>
+          <li><a href="contact.html">Запись</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Переключить тему" title="Тёмная / светлая тема">🌙</button>
+        <button class="icon-btn burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1>Советы по уходу</h1>
+        <p class="muted">Короткие заметки от наших грумеров. Ищите по заголовку, тексту или тегу и ставьте лайки: они сохраняются в вашем браузере.</p>
+
+        <label class="search-box" for="blog-search">
+          <span aria-hidden="true">🔍</span>
+          <input type="text" id="blog-search" placeholder="Поиск по советам…" data-search="#blog-list" autocomplete="off">
+        </label>
+
+        <div class="grid cols-2" id="blog-list">
+          <article class="card post reveal" data-searchable>
+            <span class="tag">Шерсть</span>
+            <h3>Как часто мыть собаку</h3>
+            <time datetime="2026-10-17">17 октября 2026</time>
+            <p>В среднем раз в 3–4 недели. Слишком частое мытьё сушит кожу, а редкое приводит к запаху и колтунам. Учитывайте породу и образ жизни питомца.</p>
+            <div class="post-footer">
+              <span class="muted">3 мин чтения</span>
+              <button class="like-btn" type="button" data-like="post-bathing" aria-pressed="false">
+                <span class="heart">🤍</span> <span class="count">0</span>
+              </button>
+            </div>
+          </article>
+          <article class="card post reveal" data-searchable>
+            <span class="tag">Шерсть</span>
+            <h3>Колтуны: как избежать и что делать</h3>
+            <time datetime="2026-10-14">14 октября 2026</time>
+            <p>Регулярно вычёсывайте собаку пуходёркой и массажной щёткой. Свежий колтун аккуратно разбирают пальцами и спреем, а запущенный лучше доверить грумеру.</p>
+            <div class="post-footer">
+              <span class="muted">4 мин чтения</span>
+              <button class="like-btn" type="button" data-like="post-mats" aria-pressed="false">
+                <span class="heart">🤍</span> <span class="count">0</span>
+              </button>
+            </div>
+          </article>
+          <article class="card post reveal" data-searchable>
+            <span class="tag">Когти</span>
+            <h3>Когти: когда пора подстригать</h3>
+            <time datetime="2026-10-11">11 октября 2026</time>
+            <p>Если при ходьбе по плитке слышно цоканье, когти уже длинные. Стричь нужно кусачками для собак и не задевать живую часть с сосудом.</p>
+            <div class="post-footer">
+              <span class="muted">3 мин чтения</span>
+              <button class="like-btn" type="button" data-like="post-nails" aria-pressed="false">
+                <span class="heart">🤍</span> <span class="count">0</span>
+              </button>
+            </div>
+          </article>
+          <article class="card post reveal" data-searchable>
+            <span class="tag">Уши</span>
+            <h3>Чистка ушей без вреда</h3>
+            <time datetime="2026-10-08">8 октября 2026</time>
+            <p>Используйте специальный лосьон и мягкий диск. Ватные палочки в слуховой проход не вводите. Покраснение, запах и выделения повод показать собаку ветеринару.</p>
+            <div class="post-footer">
+              <span class="muted">4 мин чтения</span>
+              <button class="like-btn" type="button" data-like="post-ears" aria-pressed="false">
+                <span class="heart">🤍</span> <span class="count">0</span>
+              </button>
+            </div>
+          </article>
+          <article class="card post reveal" data-searchable>
+            <span class="tag">Первый раз</span>
+            <h3>Первый груминг щенка</h3>
+            <time datetime="2026-10-05">5 октября 2026</time>
+            <p>Приходите после вакцинации и карантина. Начните с короткого знакомства: звук машинки, фен, лёгкое вычёсывание. Так щенок привыкнет без страха.</p>
+            <div class="post-footer">
+              <span class="muted">5 мин чтения</span>
+              <button class="like-btn" type="button" data-like="post-puppy" aria-pressed="false">
+                <span class="heart">🤍</span> <span class="count">0</span>
+              </button>
+            </div>
+          </article>
+          <article class="card post reveal" data-searchable>
+            <span class="tag">Сезон</span>
+            <h3>Нужно ли стричь собаку летом</h3>
+            <time datetime="2026-10-02">2 октября 2026</time>
+            <p>Короткая стрижка помогает не всем. Шерсть многих пород защищает от жары, поэтому вместо «под ноль» лучше сделать вычёсывание подшёрстка.</p>
+            <div class="post-footer">
+              <span class="muted">4 мин чтения</span>
+              <button class="like-btn" type="button" data-like="post-summer" aria-pressed="false">
+                <span class="heart">🤍</span> <span class="count">0</span>
+              </button>
+            </div>
+          </article>
+        </div>
+        <p class="empty-state" id="blog-empty">Ничего не найдено. Попробуйте другой запрос.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer (одинаковый на всех страницах) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Груминг-салон «Пушистый друг». Учебный проект.</p>
+      <ul class="footer-nav">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О салоне</a></li>
+        <li><a href="blog.html">Советы</a></li>
+        <li><a href="contact.html">Запись</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="icon-btn to-top" id="to-top" type="button" aria-label="Наверх">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="О груминг-салоне «Пушистый друг»: описание, цели, команда и история.">
+  <title>О салоне — Пушистый друг</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Применяем сохранённую тему до отрисовки, чтобы не было мигания */
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t && window.matchMedia('(prefers-color-scheme: dark)').matches) t = 'dark';
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- ===== Header (одинаковый на всех страницах) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="36" height="36">
+        <span>Пушистый друг</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html" class="active" aria-current="page">О салоне</a></li>
+          <li><a href="blog.html">Советы</a></li>
+          <li><a href="contact.html">Запись</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Переключить тему" title="Тёмная / светлая тема">🌙</button>
+        <button class="icon-btn burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1>О салоне</h1>
+
+        <div class="card reveal">
+          <h2>Описание</h2>
+          <p>
+            «Пушистый друг» — небольшой груминг-салон, где к каждой собаке относятся как к члену семьи.
+            Мы стрижём, купаем и расчёсываем питомцев всех размеров: от йорков до сенбернаров.
+          </p>
+          <p style="margin:0">
+            Работаем без спешки, не используем жёсткую фиксацию и делаем перерывы, если собаке нужно отдохнуть.
+            Косметика у нас гипоаллергенная, а инструменты проходят обработку после каждого клиента.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Цели и задачи</h2>
+        <div class="grid cols-2">
+          <div class="card reveal">
+            <h3>🎯 Цели</h3>
+            <ul class="goals">
+              <li>Сделать груминг комфортным для собаки и её хозяина.</li>
+              <li>Сохранять здоровье кожи и шерсти питомцев.</li>
+              <li>Рассказывать владельцам, как правильно ухаживать дома.</li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3>✅ Задачи</h3>
+            <ul class="goals">
+              <li>Подбирать стрижку и уход под породу и характер собаки.</li>
+              <li>Использовать безопасные средства и чистые инструменты.</li>
+              <li>Приучать щенков к процедурам мягко и без стресса.</li>
+              <li>Напоминать о плановых визитах и давать советы после груминга.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Команда</h2>
+        <div class="grid cols-3">
+          <div class="card team-card reveal">
+            <div class="avatar" aria-hidden="true">✂️</div>
+            <h3>Анна</h3>
+            <p class="muted" style="margin:0">Мастер-грумер, стрижки терьеров и пуделей</p>
+          </div>
+          <div class="card team-card reveal">
+            <div class="avatar" aria-hidden="true">🐕</div>
+            <h3>Максим</h3>
+            <p class="muted" style="margin:0">Грумер крупных пород, тримминг и уход при линьке</p>
+          </div>
+          <div class="card team-card reveal">
+            <div class="avatar" aria-hidden="true">📋</div>
+            <h3>Ольга</h3>
+            <p class="muted" style="margin:0">Администратор, запись и ответы на вопросы</p>
+          </div>
+        </div>
+        <p class="form-hint">Имена и роли указаны для примера: замените их на своих.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">История</h2>
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="when">2018</span>
+            <p>Открылся первый небольшой кабинет с одним мастером.</p>
+          </li>
+          <li class="reveal">
+            <span class="when">2021</span>
+            <p>Переехали в просторное помещение, появились зоны для крупных и мелких пород.</p>
+          </li>
+          <li class="reveal">
+            <span class="when">2024</span>
+            <p>Добавили тримминг, спецуход при линьке и занятия по привыканию для щенков.</p>
+          </li>
+          <li class="reveal">
+            <span class="when">2026</span>
+            <p>Запустили этот сайт: на нём можно посмотреть услуги, прочитать советы и оставить заявку.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer (одинаковый на всех страницах) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Груминг-салон «Пушистый друг». Учебный проект.</p>
+      <ul class="footer-nav">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О салоне</a></li>
+        <li><a href="blog.html">Советы</a></li>
+        <li><a href="contact.html">Запись</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="icon-btn to-top" id="to-top" type="button" aria-label="Наверх">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

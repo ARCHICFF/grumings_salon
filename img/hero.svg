@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 280" role="img" aria-label="Иллюстрация: собака в пене после купания">
+  <circle cx="160" cy="140" r="130" fill="#14b8a6" opacity="0.16"/>
+  <!-- ванна -->
+  <path d="M50 190h220l-14 50a16 16 0 0 1-15 11H79a16 16 0 0 1-15-11z" fill="#ffffff" stroke="#b7c4c2" stroke-width="3"/>
+  <rect x="44" y="182" width="232" height="14" rx="7" fill="#0f766e"/>
+  <!-- уши -->
+  <ellipse cx="108" cy="104" rx="22" ry="38" fill="#b45309" transform="rotate(14 108 104)"/>
+  <ellipse cx="212" cy="104" rx="22" ry="38" fill="#b45309" transform="rotate(-14 212 104)"/>
+  <!-- морда -->
+  <ellipse cx="160" cy="128" rx="58" ry="56" fill="#f2c27b"/>
+  <ellipse cx="160" cy="150" rx="30" ry="24" fill="#fde7c3"/>
+  <circle cx="138" cy="118" r="7" fill="#1f2937"/>
+  <circle cx="182" cy="118" r="7" fill="#1f2937"/>
+  <circle cx="140" cy="116" r="2" fill="#fff"/>
+  <circle cx="184" cy="116" r="2" fill="#fff"/>
+  <ellipse cx="160" cy="140" rx="10" ry="7" fill="#1f2937"/>
+  <path d="M160 147v8" stroke="#1f2937" stroke-width="3" stroke-linecap="round"/>
+  <path d="M146 158q14 12 28 0" fill="none" stroke="#1f2937" stroke-width="3" stroke-linecap="round"/>
+  <path d="M154 163q6 14 12 0z" fill="#f87171"/>
+  <!-- пена на голове -->
+  <circle cx="132" cy="78" r="14" fill="#fff" stroke="#cfe5e2" stroke-width="2"/>
+  <circle cx="152" cy="68" r="17" fill="#fff" stroke="#cfe5e2" stroke-width="2"/>
+  <circle cx="176" cy="74" r="14" fill="#fff" stroke="#cfe5e2" stroke-width="2"/>
+  <!-- пена в ванне -->
+  <circle cx="86" cy="188" r="16" fill="#fff" stroke="#cfe5e2" stroke-width="2"/>
+  <circle cx="110" cy="182" r="12" fill="#fff" stroke="#cfe5e2" stroke-width="2"/>
+  <circle cx="234" cy="186" r="17" fill="#fff" stroke="#cfe5e2" stroke-width="2"/>
+  <circle cx="212" cy="180" r="11" fill="#fff" stroke="#cfe5e2" stroke-width="2"/>
+  <!-- пузыри -->
+  <circle cx="258" cy="96" r="12" fill="none" stroke="#14b8a6" stroke-width="3"/>
+  <circle cx="276" cy="130" r="7" fill="none" stroke="#14b8a6" stroke-width="3"/>
+  <circle cx="60" cy="110" r="9" fill="none" stroke="#14b8a6" stroke-width="3"/>
+  <circle cx="44" cy="146" r="5" fill="none" stroke="#14b8a6" stroke-width="3"/>
+  <circle cx="262" cy="52" r="6" fill="#f97316"/>
+</svg>

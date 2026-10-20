@@ -36,32 +36,12 @@ my-web-site/
 
 ## 🌐 GitHub Pages
 
-Сайт доступен по адресу: https://[your-username].github.io/[repo-name]
-
-### Как опубликовать
-
-1. Создайте на GitHub репозиторий (например, `my-web-site`) и склонируйте его: `git clone [your-repo-url]`
-2. Скопируйте файлы проекта в папку репозитория.
-3. Отправьте код в ветку `main`:
-   ```bash
-   git add .
-   git commit -m "feat: add initial version of the site"
-   git push origin main
-   ```
-4. В репозитории откройте **Settings → Pages**, выберите ветку `main` и папку `/ (root)`, сохраните.
-5. Подождите около 5 минут, пока сайт развернётся.
-
-### Рабочий процесс веток
-
-```bash
-git checkout -b test        # один раз: создать ветку test
-# ...правки, затем:
-git add . && git commit -m "feat: add dark theme functionality"
-git checkout main
-git merge test
-git push origin main
-```
+Сайт доступен по адресу: https://archicff.github.io/grumings_salon/
 
 ## 👥 Разработчики
 
 - Артём Г. — разработчик и автор проекта
+
+## 📄 Лицензия
+
+MIT
